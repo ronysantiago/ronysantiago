@@ -1,214 +1,115 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rony Santiago - Portafolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rony Santiago - Portafolio</title>
 
-  <!-- Fuente moderna de Google -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+    <!-- SEO -->
+    <meta name="description" content="Portafolio de Rony Santiago, Ingeniero Mecánico especializado en Piping, CAD, Simulación, 3D y Programación.">
+    <meta name="keywords" content="Ingeniería mecánica, Piping, CAD, SolidWorks, Diseño 3D, Programación, Portafolio">
+    <meta name="author" content="Rony Santiago">
 
-  <style>
-    /* Reset y estilos base */
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: 'Montserrat', sans-serif;
-      background-color: #f5f7fa;
-      color: #333;
-      line-height: 1.6;
-    }
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
 
-    .container {
-      max-width: 1000px;
-      margin: auto;
-      padding: 20px;
-    }
-
-    /* Header */
-    header {
-      text-align: center;
-      padding: 50px 20px;
-      background: linear-gradient(135deg, #667eea, #764ba2);
-      color: white;
-      border-radius: 12px;
-      margin-bottom: 30px;
-    }
-
-    header img {
-      width: 140px;
-      height: 140px;
-      border-radius: 50%;
-      border: 5px solid #fff;
-      margin-bottom: 20px;
-      object-fit: cover;
-    }
-
-    header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
-    }
-
-    header p {
-      font-size: 1.1rem;
-      opacity: 0.9;
-    }
-
-    /* Secciones */
-    section {
-      background: white;
-      padding: 25px;
-      margin-bottom: 20px;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    }
-
-    h2 {
-      font-size: 1.5rem;
-      color: #667eea;
-      margin-bottom: 15px;
-      border-bottom: 2px solid #667eea;
-      padding-bottom: 5px;
-    }
-
-    /* Habilidades */
-    .skills-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      list-style: none;
-    }
-
-    .skill {
-      background: #667eea;
-      color: white;
-      padding: 6px 15px;
-      border-radius: 20px;
-      font-size: 0.9rem;
-    }
-
-    /* Proyectos */
-    .project {
-      margin-bottom: 20px;
-    }
-
-    .project h3 {
-      margin-bottom: 8px;
-      font-size: 1.2rem;
-      color: #333;
-    }
-
-    .project p {
-      margin-bottom: 6px;
-    }
-
-    .project a {
-      color: #667eea;
-      font-weight: bold;
-      text-decoration: none;
-    }
-
-    .project a:hover { text-decoration: underline; }
-
-    /* Contacto */
-    .contact p {
-      margin-bottom: 8px;
-    }
-
-    /* Botón CV */
-    .btn {
-      display: inline-block;
-      margin-top: 10px;
-      background: #667eea;
-      color: white;
-      padding: 10px 18px;
-      border-radius: 25px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: background 0.3s;
-    }
-    .btn:hover {
-      background: #4a5fd6;
-    }
-
-    /* Footer */
-    footer {
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9rem;
-      color: #555;
-    }
-    footer a { color: #667eea; text-decoration: none; }
-    footer a:hover { text-decoration: underline; }
-
-    /* Responsive */
-    @media (max-width: 768px) {
-      header h1 { font-size: 2rem; }
-      h2 { font-size: 1.3rem; }
-    }
-  </style>
+    <!-- Modo oscuro -->
+    <script defer src="assets/js/theme.js"></script>
 </head>
+
 <body>
-  <div class="container">
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#sobre">Sobre mí</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- HEADER -->
     <header>
-      <img src="profile.jpg" alt="Foto de Rony Santiago" />
-      <h1>Rony Santiago</h1>
-      <p>Ingeniero Mecánico | Diseñador 3D | Desarrollador en Formación</p>
-      <a class="btn" href="cv.pdf" target="_blank">📄 Descargar CV</a>
+        <img src="profile.jpg" alt="Foto de perfil">
+        <h1>Rony Santiago</h1>
+        <p>Ingeniero Mecánico | Piping | CAD 3D | Programación | Simulación</p>
+
+        <a class="btn" href="assets/cv/cv.pdf" target="_blank" download>
+            📄 Descargar CV
+        </a>
+
+        <button id="toggle-theme">🌙 Modo Oscuro</button>
     </header>
 
-    <section>
-      <h2>👋 Sobre Mí</h2>
-      <p>Ingeniero mecánico apasionado por la tecnología, el diseño y la innovación. Mi experiencia combina ingeniería mecánica, CAD/CAE, impresión 3D y programación en Python y Arduino, creando soluciones que integran el mundo físico y digital.</p>
-    </section>
+    <div class="container">
 
-    <section>
-      <h2>🛠 Habilidades</h2>
-      <ul class="skills-list">
-        <li class="skill">Ingeniería Mecánica</li>
-        <li class="skill">Diseño CAD</li>
-        <li class="skill">SolidWorks</li>
-        <li class="skill">Impresión 3D</li>
-        <li class="skill">HTML5</li>
-        <li class="skill">CSS3</li>
-        <li class="skill">Python</li>
-        <li class="skill">Git & GitHub</li>
-        <li class="skill">LaTeX</li>
-      </ul>
-    </section>
+        <!-- SOBRE MÍ -->
+        <section id="sobre">
+            <h2>Sobre mí</h2>
+            <p>
+                Soy un ingeniero mecánico con experiencia en tuberías (Piping), diseño CAD 3D, 
+                simulaciones FEA, programación y desarrollo de modelos digitales avanzados.
+                Me apasiona crear soluciones técnicas con precisión y un enfoque profesional.
+            </p>
+        </section>
 
-    <section>
-      <h2>🔧 Proyectos</h2>
-      <div class="project">
-        <h3>🚀 Robot Paralelo XYZ</h3>
-        <p>Modelado y simulación en SolidWorks.</p>
-        <p><strong>Tecnologías:</strong> CAD, Renderizado</p>
-        <a href="https://www.linkedin.com/posts/rony-david-santiago-armas-4020131aa_solidworks-3dmodeling-robots-activity-7200967797131071489-hDAJ" target="_blank">Ver proyecto</a>
-      </div>
+        <!-- HABILIDADES -->
+        <section id="habilidades">
+            <h2>Habilidades</h2>
+            <ul class="skills-list">
+                <li class="skill">SolidWorks</li>
+                <li class="skill">ANSYS</li>
+                <li class="skill">AutoCAD Plant 3D</li>
+                <li class="skill">Python</li>
+                <li class="skill">Piping & Ducting</li>
+                <li class="skill">Fluids & Heat Transfer</li>
+                <li class="skill">Modelado 3D</li>
+                <li class="skill">Simulación Mecánica</li>
+                <li class="skill">GitHub</li>
+            </ul>
+        </section>
 
-      <div class="project">
-        <h3>⚡ Aerogenerador</h3>
-        <p>Cálculo y diseño de engranajes planetarios bajo normas AGMA e ISO 6336.</p>
-        <a href="https://www.linkedin.com/posts/rony-david-santiago-armas-4020131aa_ingenieraedamecaernica-energaedaeaejlica-activity-7364850360718401536-MnLz" target="_blank">Ver proyecto</a>
-      </div>
+        <!-- PROYECTOS -->
+        <section id="proyectos">
+            <h2>Proyectos</h2>
 
-      <div class="project">
-        <h3>🚦 Semáforo con Arduino</h3>
-        <p>Prototipo funcional de semáforo programado en Arduino.</p>
-        <a href="https://www.tinkercad.com/things/jj6IrFhPi6u-semaforo" target="_blank">Ver simulación</a>
-      </div>
-    </section>
+            <div class="project">
+                <h3>Sistema de Tuberías Completo – P&ID + 3D</h3>
+                <p>Desarrollo integral de diseño de tuberías con normas ASME, materiales, cálculos y modelos 3D.</p>
+                <a href="#" target="_blank">Ver proyecto</a>
+            </div>
 
-    <section class="contact">
-      <h2>📞 Contacto</h2>
-      <p>📧 <strong>Email:</strong> ronysantiago7@gmail.com</p>
-      <p>💼 <strong>LinkedIn:</strong> <a href="https://linkedin.com/in/rony-david-santiago-armas-4020131aa">linkedin.com/in/rony-david-santiago-armas</a></p>
-      <p>🐙 <strong>GitHub:</strong> <a href="https://github.com/ronysantiago">github.com/ronysantiago</a></p>
-    </section>
+            <div class="project">
+                <h3>Simulación FEA de un Fuselaje Elíptico</h3>
+                <p>Análisis estructural utilizando SolidWorks + ANSYS, generando mallas refinadas y reportes técnicos.</p>
+                <a href="#" target="_blank">Ver proyecto</a>
+            </div>
+
+            <div class="project">
+                <h3>Modelado 3D Paramétrico en Blender</h3>
+                <p>Creación de props místicos y elementos avanzados con materiales PBR y geometría procedural.</p>
+                <a href="#" target="_blank">Ver proyecto</a>
+            </div>
+
+        </section>
+
+        <!-- CONTACTO -->
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Puedes comunicarte conmigo a través de:</p>
+            <p>📧 <strong>ronysantiago@gmail.com</strong></p>
+            <p>🔗 
+                <a href="https://www.linkedin.com" target="_blank">LinkedIn</a> |
+                <a href="https://github.com" target="_blank">GitHub</a>
+            </p>
+        </section>
+
+    </div>
 
     <footer>
-      <p>&copy; 2025 Rony Santiago.</p>
-      <p><a href="LICENSE">Licencia MIT</a> | <a href="https://github.com/ronysantiago/ronysantiago">Código fuente</a></p>
+        © 2025 Rony Santiago — Todos los derechos reservados.
     </footer>
-  </div>
+
 </body>
 </html>
