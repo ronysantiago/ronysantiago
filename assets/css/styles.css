@@ -1,0 +1,166 @@
+/* -------------------------
+   ESTILOS GENERALES
+-------------------------- */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    background-color: #ffffff;
+    color: #222;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Contenedor general */
+.container {
+    width: 80%;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* -------------------------
+   NAVBAR
+-------------------------- */
+nav.navbar {
+    background: #111;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* -------------------------
+   HEADER
+-------------------------- */
+header {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+header h1 {
+    margin-top: 15px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+#toggle-theme {
+    margin-top: 20px;
+    padding: 8px 15px;
+}
+
+/* -------------------------
+   SECCIONES
+-------------------------- */
+section {
+  animation: fadeIn 0.7s ease forwards;
+  opacity: 0;
+  transform: translateY(10px);
+  margin-bottom: 50px;
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; transform: translateY(0); }
+  from { opacity: 0; transform: translateY(10px); }
+}
+
+h2 {
+    border-left: 4px solid #007bff;
+    padding-left: 10px;
+}
+
+/* -------------------------
+   HABILIDADES
+-------------------------- */
+.skills-list {
+    list-style: none;
+    padding: 0;
+}
+
+.skill {
+    display: inline-block;
+    padding: 8px 12px;
+    margin: 5px;
+    background: #f2f2f2;
+    border-radius: 6px;
+}
+
+/* -------------------------
+   PROYECTOS
+-------------------------- */
+.project {
+    background: #f8f8f8;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.project a {
+    color: #007bff;
+}
+
+/* -------------------------
+   FOOTER
+-------------------------- */
+footer {
+    margin-top: 50px;
+    text-align: center;
+    padding: 20px;
+    background: #111;
+    color: white;
+}
+
+/* -------------------------
+   MODO OSCURO
+-------------------------- */
+.dark-mode {
+    background-color: #1a1a1a;
+    color: #eaeaea;
+}
+
+.dark-mode nav.navbar {
+    background: #000;
+}
+
+.dark-mode .project {
+    background: #2a2a2a;
+}
+
+.dark-mode .skill {
+    background: #333;
+}
+
+.dark-mode footer {
+    background: #000;
+}
