@@ -1,10 +1,3 @@
-Below is a **clean, modern, professional GitHub README**, written **based on your CV**.
-It is optimized for **GitHub recruiters**, **technical clarity**, **keywords**, and **project visibility**.
-
-You can **copy and paste directly** into your `README.md`.
-
----
-
 # 👋 Hi, I'm **Rony Santiago**
 
 ### **Mechanical Engineer | University Professor | 3D Designer | Software & Robotics Developer**
