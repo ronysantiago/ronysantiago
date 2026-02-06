@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rony Santiago - Portafolio</title>
+
+    <title>Rony Santiago | Ingeniero Mecánico – Diseño, Simulación y Piping</title>
 
     <!-- SEO -->
-    <meta name="description" content="Portafolio de Rony Santiago, Ingeniero Mecánico especializado en Piping, CAD, Simulación, 3D y Programación.">
-    <meta name="keywords" content="Ingeniería mecánica, Piping, CAD, SolidWorks, Diseño 3D, Programación, Portafolio">
+    <meta name="description" content="Portafolio profesional de Rony Santiago, Ingeniero Mecánico especializado en diseño mecánico, simulación CAE/FEA e ingeniería de tuberías.">
+    <meta name="keywords" content="Ingeniería Mecánica, Diseño Mecánico, CAE, FEA, Piping, AutoCAD Plant 3D, ANSYS, SolidWorks">
     <meta name="author" content="Rony Santiago">
 
     <!-- CSS -->
@@ -22,93 +23,148 @@
     <!-- NAVBAR -->
     <nav class="navbar">
         <ul>
-            <li><a href="#sobre">Sobre mí</a></li>
-            <li><a href="#habilidades">Habilidades</a></li>
-            <li><a href="#proyectos">Proyectos</a></li>
-            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#about">Perfil</a></li>
+            <li><a href="#projects">Proyectos</a></li>
+            <li><a href="#contact">Contacto</a></li>
         </ul>
     </nav>
 
-    <!-- HEADER -->
-    <header>
-        <img src="profile.jpg" alt="Foto de perfil">
+    <!-- HEADER / HOME -->
+    <header id="home">
         <h1>Rony Santiago</h1>
-        <p>Ingeniero Mecánico | Piping | CAD 3D | Programación | Simulación</p>
 
-        <a class="btn" href="assets/cv/cv.pdf" target="_blank" download>
-            📄 Descargar CV
-        </a>
+        <h2>
+            Ingeniero Mecánico especializado en Diseño, Simulación e Ingeniería de Tuberías
+        </h2>
 
-        <button id="toggle-theme">🌙 Modo Oscuro</button>
+        <p>
+            CAD/CAE · AutoCAD Plant 3D · ANSYS · SolidWorks · AFT · Programación aplicada · Docencia técnica
+        </p>
+
+        <div class="header-actions">
+            <a class="btn" href="#projects">Ver proyectos</a>
+
+            <a class="btn secondary" href="assets/cv/cv.pdf" target="_blank">
+                CV (PDF – ATS)
+            </a>
+
+            <button id="toggle-theme">🌙</button>
+        </div>
     </header>
 
-    <div class="container">
+    <main class="container">
 
-        <!-- SOBRE MÍ -->
-        <section id="sobre">
-            <h2>Sobre mí</h2>
+        <!-- PERFIL PROFESIONAL -->
+        <section id="about">
+            <h2>Perfil profesional</h2>
+
             <p>
-                Soy un ingeniero mecánico con experiencia en tuberías (Piping), diseño CAD 3D, 
-                simulaciones FEA, programación y desarrollo de modelos digitales avanzados.
-                Me apasiona crear soluciones técnicas con precisión y un enfoque profesional.
+                Ingeniero Mecánico con enfoque en el diseño, análisis y validación de sistemas de ingeniería,
+                integrando herramientas CAD/CAE, simulación avanzada y programación aplicada.
+            </p>
+
+            <p>
+                Experiencia en ingeniería de tuberías, diseño mecánico y análisis estructural y térmico,
+                combinada con docencia técnica universitaria, lo que permite abordar proyectos con rigor
+                conceptual, metodología clara y orientación a resultados.
+            </p>
+
+            <p>
+                Interesado en posiciones de <strong>Mechanical Design Engineer</strong>,
+                <strong>CAE / Simulation Engineer</strong> o <strong>Piping Engineer</strong>,
+                así como en proyectos de formación técnica especializada.
             </p>
         </section>
 
-        <!-- HABILIDADES -->
-        <section id="habilidades">
-            <h2>Habilidades</h2>
-            <ul class="skills-list">
-                <li class="skill">SolidWorks</li>
-                <li class="skill">ANSYS</li>
-                <li class="skill">AutoCAD Plant 3D</li>
-                <li class="skill">Python</li>
-                <li class="skill">Piping & Ducting</li>
-                <li class="skill">Fluids & Heat Transfer</li>
-                <li class="skill">Modelado 3D</li>
-                <li class="skill">Simulación Mecánica</li>
-                <li class="skill">GitHub</li>
-            </ul>
-        </section>
-
         <!-- PROYECTOS -->
-        <section id="proyectos">
-            <h2>Proyectos</h2>
+        <section id="projects">
+            <h2>Proyectos de ingeniería</h2>
 
-            <div class="project">
-                <h3>Sistema de Tuberías Completo – P&ID + 3D</h3>
-                <p>Desarrollo integral de diseño de tuberías con normas ASME, materiales, cálculos y modelos 3D.</p>
-                <a href="#" target="_blank">Ver proyecto</a>
-            </div>
+            <p>
+                A continuación se presentan proyectos seleccionados que demuestran el uso de metodologías
+                de ingeniería, criterios de diseño, simulación y toma de decisiones técnicas fundamentadas.
+            </p>
 
-            <div class="project">
-                <h3>Simulación FEA de un Fuselaje Elíptico</h3>
-                <p>Análisis estructural utilizando SolidWorks + ANSYS, generando mallas refinadas y reportes técnicos.</p>
-                <a href="#" target="_blank">Ver proyecto</a>
-            </div>
+            <!-- PROYECTO 1 -->
+            <article class="project">
+                <h3>Diseño y Simulación de Sistema de Tuberías GLP</h3>
 
-            <div class="project">
-                <h3>Modelado 3D Paramétrico en Blender</h3>
-                <p>Creación de props místicos y elementos avanzados con materiales PBR y geometría procedural.</p>
-                <a href="#" target="_blank">Ver proyecto</a>
-            </div>
+                <p>
+                    Desarrollo integral de un sistema de tuberías para gas licuado de petróleo (GLP),
+                    incluyendo diagramas P&ID, modelado 3D, selección de materiales y validación hidráulica.
+                </p>
+
+                <ul>
+                    <li>Normativas ASME aplicadas</li>
+                    <li>Modelado 3D en AutoCAD Plant 3D</li>
+                    <li>Análisis hidráulico con software especializado</li>
+                </ul>
+
+                <a href="projects/glp-piping.html">Ver proyecto completo</a>
+            </article>
+
+            <!-- PROYECTO 2 -->
+            <article class="project">
+                <h3>Análisis CAE de Estructura Elíptica</h3>
+
+                <p>
+                    Análisis estructural mediante elementos finitos de una geometría elíptica,
+                    evaluando distribución de esfuerzos, deformaciones y factores de seguridad.
+                </p>
+
+                <ul>
+                    <li>Modelado CAD y mallado refinado</li>
+                    <li>Simulación FEA con ANSYS</li>
+                    <li>Comparación teoría vs resultados numéricos</li>
+                </ul>
+
+                <a href="projects/fea-elliptic-structure.html">Ver proyecto completo</a>
+            </article>
+
+            <!-- PROYECTO 3 -->
+            <article class="project">
+                <h3>Diseño Mecánico Paramétrico y Automatización</h3>
+
+                <p>
+                    Desarrollo de modelos mecánicos paramétricos y automatización de cálculos
+                    mediante programación aplicada a problemas de ingeniería.
+                </p>
+
+                <ul>
+                    <li>Diseño paramétrico en CAD</li>
+                    <li>Scripts en Python y MATLAB</li>
+                    <li>Optimización de procesos de diseño</li>
+                </ul>
+
+                <a href="projects/parametric-design.html">Ver proyecto completo</a>
+            </article>
 
         </section>
 
         <!-- CONTACTO -->
-        <section id="contacto">
+        <section id="contact">
             <h2>Contacto</h2>
-            <p>Puedes comunicarte conmigo a través de:</p>
-            <p>📧 <strong>ronysantiago7@gmail.com</strong></p>
-            <p>🔗 
+
+            <p>
+                Para oportunidades profesionales, colaboración técnica o consultas académicas:
+            </p>
+
+            <p>
+                📧 <strong>ronysantiago7@gmail.com</strong>
+            </p>
+
+            <p>
+                🔗
                 <a href="https://www.linkedin.com" target="_blank">LinkedIn</a> |
                 <a href="https://github.com" target="_blank">GitHub</a>
             </p>
         </section>
 
-    </div>
+    </main>
 
     <footer>
-        © 2025 Rony Santiago — Todos los derechos reservados.
+        © 2025 Rony Santiago — Portafolio profesional de ingeniería.
     </footer>
 
 </body>
