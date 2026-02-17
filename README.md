@@ -53,7 +53,7 @@ My work integrates **engineering, programming, education, and digital fabricatio
 * AutoCAD & AutoCAD Electrical
 * GLP pipeline design project → *[See project](https://www.linkedin.com/posts/rony-david-santiago-armas-4020131aa_gaslp-glp-ingenieraedamecaernica-activity-7338691918299611136-w3qa)*
 
-### **Instructor — EDAT: Escuela de Diseño y Artesanía Tecnológica (2024 – Present)**
+### **Instructor — EDAT: Escuela de Diseño y Artesanía Tecnológica (2023 – Present)**
 
 * Arduino, Raspberry Pi, and Electronics
 * Advanced 3D Printing & Design
