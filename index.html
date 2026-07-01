@@ -8,7 +8,7 @@
 
     <!-- SEO -->
     <meta name="description" content="Portafolio profesional de Rony Santiago, Ingeniero Mecánico especializado en diseño mecánico, simulación CAE/FEA, ingeniería de tuberías y docencia técnica.">
-    <meta name="keywords" content="Ingeniería Mecánica, Diseño Mecánico, CAE, FEA, Piping, AutoCAD Plant 3D, ANSYS, SolidWorks, AFT Arrow, Gemelo Digital, Videos Educativos">
+    <meta name="keywords" content="Ingeniería Mecánica, Diseño Mecánico, CAE, FEA, Piping, AutoCAD Plant 3D, ANSYS, SolidWorks, AFT Arrow, Gemelo Digital, Videos Educativos, Modelos 3D">
     <meta name="author" content="Rony Santiago">
 
     <!-- CSS principal -->
@@ -17,7 +17,10 @@
     <!-- Modo oscuro -->
     <script defer src="assets/js/theme.js"></script>
 
-    <!-- Estilos para videos responsivos (pueden moverse a styles.css) -->
+    <!-- Librería para visualizar modelos 3D (glTF/GLB) -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
+
+    <!-- Estilos para videos y modelo 3D -->
     <style>
         .video-wrapper {
             position: relative;
@@ -38,6 +41,30 @@
             height: 100%;
             border-radius: 8px;
         }
+
+        /* Asegura que el visor 3D sea responsivo */
+        .model-viewer-container {
+            width: 100%;
+            max-width: 100%;
+            margin: 15px 0;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        model-viewer {
+            width: 100%;
+            height: 500px;
+            background-color: #2a2a2a;
+            border-radius: 8px;
+        }
+
+        /* Ajuste para pantallas pequeñas */
+        @media (max-width: 768px) {
+            model-viewer {
+                height: 350px;
+            }
+        }
     </style>
 </head>
 
@@ -52,6 +79,7 @@
             <li><a href="#experience">Experiencia</a></li>
             <li><a href="#projects">Proyectos</a></li>
             <li><a href="#videos">Videos</a></li>
+            <li><a href="#3d-models">Modelos 3D</a></li>
             <li><a href="#contact">Contacto</a></li>
         </ul>
     </nav>
@@ -78,7 +106,7 @@
     <!-- ==================== CONTENIDO PRINCIPAL ==================== -->
     <main class="container">
 
-        <!-- ========== PERFIL PROFESIONAL (EXTENDIDO) ========== -->
+        <!-- ========== PERFIL PROFESIONAL ========== -->
         <section id="about">
             <h2>Perfil Profesional</h2>
 
@@ -161,7 +189,6 @@
                     <li>Desarrollo materiales didácticos que integran software de ingeniería (AutoCAD, MATLAB, Python) para simulación numérica y resolución de problemas complejos.</li>
                     <li>Asesoro proyectos de servicio comunitario, guiando a los estudiantes en la aplicación de conocimientos de ingeniería a necesidades sociales.</li>
                 </ul>
-                <!-- Espacio para futuros enlaces de proyectos por materia -->
             </article>
 
             <article class="experience-item">
@@ -182,7 +209,6 @@
                 Proyectos que demuestran aplicación de metodologías de ingeniería, criterios de diseño, simulación y toma de decisiones fundamentadas.
             </p>
 
-            <!-- Proyecto 1: Gemelo Digital -->
             <article class="project">
                 <h3>Gemelo Digital para Diagnóstico de Congelamiento de GLP</h3>
                 <p>
@@ -196,7 +222,6 @@
                 <a href="https://www.linkedin.com/posts/rony-david-santiago-armas-4020131aa_ingenieraedamecaernica-aftarrow-gemelodigital-activity-7461131809259507712-NtCp" target="_blank" rel="noopener noreferrer">Ver publicación en LinkedIn →</a>
             </article>
 
-            <!-- Proyecto 2: Robot Paralelo XYZ -->
             <article class="project">
                 <h3>Robot Paralelo XYZ – CAD &amp; Animación</h3>
                 <p>
@@ -210,7 +235,6 @@
                 <a href="https://www.linkedin.com/posts/rony-david-santiago-armas-4020131aa_solidworks-3dmodeling-robots-activity-7200967797131071489-hDAJ" target="_blank" rel="noopener noreferrer">Ver video →</a>
             </article>
 
-            <!-- Proyecto 3: Caja de Engranajes para Aerogenerador -->
             <article class="project">
                 <h3>Caja de Engranajes Planetarios para Aerogenerador</h3>
                 <p>
@@ -224,7 +248,6 @@
                 <a href="https://www.linkedin.com/posts/rony-david-santiago-armas-4020131aa_ingenieraedamecaernica-energaedaeaejlica-activity-7364850360718401536-MnLz" target="_blank" rel="noopener noreferrer">Ver proyecto →</a>
             </article>
 
-            <!-- Proyecto 4: Repuesto Impreso en 3D (Toyota Autana) -->
             <article class="project">
                 <h3>Repuesto Automotriz Impreso en 3D – Toyota Autana</h3>
                 <p>
@@ -238,7 +261,6 @@
                 <a href="https://www.linkedin.com/posts/rony-david-santiago-armas-4020131aa_solidworks-toyota-diseaeho-activity-7216920953614675971-pWeV" target="_blank" rel="noopener noreferrer">Ver proyecto →</a>
             </article>
 
-            <!-- Proyecto 5: Red de Tuberías GLP -->
             <article class="project">
                 <h3>Diseño de Red de Tuberías GLP</h3>
                 <p>
@@ -252,7 +274,6 @@
                 <a href="https://www.linkedin.com/posts/rony-david-santiago-armas-4020131aa_gaslp-glp-ingenieraedamecaernica-activity-7338691918299611136-w3qa" target="_blank" rel="noopener noreferrer">Ver proyecto →</a>
             </article>
 
-            <!-- Proyecto 6: Planta de Tratamiento de Agua -->
             <article class="project">
                 <h3>Diseño de Planta de Tratamiento de Agua</h3>
                 <p>
@@ -274,7 +295,6 @@
                 Contenido educativo y demostrativo sobre mecánica, simulación y diseño.
             </p>
 
-            <!-- Video 1: Mecánica Vectorial -->
             <article class="video-item">
                 <h3>Ejercicio 3.120 – Mecánica Vectorial para Ingenieros: Estática (Beer &amp; Johnston)</h3>
                 <p>
@@ -284,8 +304,27 @@
                     <iframe width="100%" height="400" src="https://www.youtube.com/embed/rsyEhaxXmtU" title="Ejercicio 3.120 - Mecánica Vectorial para Ingenieros: Estática" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </article>
+        </section>
 
-            <!-- Espacio para más videos (copia el bloque anterior y cambia la URL) -->
+        <!-- ========== MODELOS 3D INTERACTIVOS ========== -->
+        <section id="3d-models">
+            <h2>Modelos 3D Interactivos</h2>
+            <p>
+                Explora mis diseños y ensamblajes directamente desde el navegador. Puedes rotar, acercar y alejar los modelos con el mouse o los dedos.
+            </p>
+
+            <article class="project">
+                <h3>Visualizador de Modelo Arquitectónico</h3>
+                <div class="model-viewer-container">
+                    <model-viewer 
+                        src="assets/3d/arquitectura0.glb" 
+                        alt="Modelo 3D de proyecto arquitectónico" 
+                        auto-rotate 
+                        camera-controls 
+                        style="width: 100%; height: 500px; background-color: #2a2a2a; border-radius: 8px;">
+                    </model-viewer>
+                </div>
+            </article>
         </section>
 
         <!-- ========== CONTACTO ========== -->
