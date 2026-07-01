@@ -8,19 +8,43 @@
 
     <!-- SEO -->
     <meta name="description" content="Portafolio profesional de Rony Santiago, Ingeniero Mecánico especializado en diseño mecánico, simulación CAE/FEA e ingeniería de tuberías.">
-    <meta name="keywords" content="Ingeniería Mecánica, Diseño Mecánico, CAE, FEA, Piping, AutoCAD Plant 3D, ANSYS, SolidWorks">
+    <meta name="keywords" content="Ingeniería Mecánica, Diseño Mecánico, CAE, FEA, Piping, AutoCAD Plant 3D, ANSYS, SolidWorks, AFT Arrow, Gemelo Digital">
     <meta name="author" content="Rony Santiago">
 
-    <!-- CSS -->
+    <!-- CSS principal -->
     <link rel="stylesheet" href="assets/css/styles.css">
 
     <!-- Modo oscuro -->
     <script defer src="assets/js/theme.js"></script>
+
+    <!-- Estilos adicionales para video responsivo (por si no están en styles.css) -->
+    <style>
+        /* Contenedor responsivo para videos de YouTube */
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 8px;
+        }
+    </style>
 </head>
 
 <body>
 
-    <!-- NAVBAR -->
+    <!-- ==================== NAVEGACIÓN ==================== -->
     <nav class="navbar">
         <ul>
             <li><a href="#home">Inicio</a></li>
@@ -30,7 +54,7 @@
         </ul>
     </nav>
 
-    <!-- HEADER / HOME -->
+    <!-- ==================== CABECERA / HOME ==================== -->
     <header id="home">
         <h1>Rony Santiago</h1>
 
@@ -53,9 +77,10 @@
         </div>
     </header>
 
+    <!-- ==================== CONTENIDO PRINCIPAL ==================== -->
     <main class="container">
 
-        <!-- PERFIL PROFESIONAL -->
+        <!-- ========== PERFIL PROFESIONAL ========== -->
         <section id="about">
             <h2>Perfil profesional</h2>
 
@@ -77,7 +102,7 @@
             </p>
         </section>
 
-        <!-- PROYECTOS -->
+        <!-- ========== PROYECTOS ========== -->
         <section id="projects">
             <h2>Proyectos de ingeniería</h2>
 
@@ -86,25 +111,44 @@
                 de ingeniería, criterios de diseño, simulación y toma de decisiones técnicas fundamentadas.
             </p>
 
-            <!-- PROYECTO 1 -->
+            <!-- ========== PROYECTO 1: GEMELO DIGITAL + VIDEO ========== -->
             <article class="project">
-                <h3>Diseño y Simulación de Sistema de Tuberías GLP</h3>
+                <h3>Gemelo Digital para Diagnóstico de Congelamiento de GLP</h3>
 
                 <p>
-                    Desarrollo integral de un sistema de tuberías para gas licuado de petróleo (GLP),
-                    incluyendo diagramas P&ID, modelado 3D, selección de materiales y validación hidráulica.
+                    Diagnóstico termofluidodinámico de un sistema de combustión industrial
+                    en una planta de snacks. Se utilizó <strong>AFT Arrow</strong> para crear un gemelo digital
+                    que permitió identificar la causa raíz del congelamiento en la línea de alimentación de GLP,
+                    evitando paradas de producción y eliminando el "ensayo y error".
                 </p>
 
                 <ul>
-                    <li>Normativas ASME aplicadas</li>
-                    <li>Modelado 3D en AutoCAD Plant 3D</li>
-                    <li>Análisis hidráulico con software especializado</li>
+                    <li>Simulación de flujo compresible y efecto Joule‑Thomson</li>
+                    <li>Aplicación de normas <strong>ASME B31.3</strong> y <strong>COVENIN 3550</strong></li>
+                    <li>Rediseño de diámetros y tren de regulación validado digitalmente</li>
                 </ul>
 
-                <a href="projects/glp-piping.html">Ver proyecto completo</a>
+                <!-- Video embebido de YouTube (Mecánica Vectorial) -->
+                <div class="video-wrapper">
+                    <iframe 
+                        width="100%" 
+                        height="400" 
+                        src="https://www.youtube.com/embed/rsyEhaxXmtU" 
+                        title="Ejercicio 3.120 - Mecánica Vectorial para Ingenieros: Estática | Beer &amp; Johnston" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+
+                <a href="https://www.linkedin.com/posts/rony-david-santiago-armas-4020131aa_ingenieraedamecaernica-aftarrow-gemelodigital-activity-7461131809259507712-NtCp" 
+                   target="_blank" 
+                   rel="noopener noreferrer">
+                    Ver publicación completa en LinkedIn →
+                </a>
             </article>
 
-            <!-- PROYECTO 2 -->
+            <!-- ========== PROYECTO 2 ========== -->
             <article class="project">
                 <h3>Análisis CAE de Estructura Elíptica</h3>
 
@@ -122,7 +166,7 @@
                 <a href="projects/fea-elliptic-structure.html">Ver proyecto completo</a>
             </article>
 
-            <!-- PROYECTO 3 -->
+            <!-- ========== PROYECTO 3 ========== -->
             <article class="project">
                 <h3>Diseño Mecánico Paramétrico y Automatización</h3>
 
@@ -142,7 +186,7 @@
 
         </section>
 
-        <!-- CONTACTO -->
+        <!-- ========== CONTACTO ========== -->
         <section id="contact">
             <h2>Contacto</h2>
 
@@ -156,15 +200,16 @@
 
             <p>
                 🔗
-                <a href="https://www.linkedin.com" target="_blank">LinkedIn</a> |
-                <a href="https://github.com" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/rony-david-santiago-armas-4020131aa/" target="_blank" rel="noopener noreferrer">LinkedIn</a> |
+                <a href="https://github.com/ronysantiago" target="_blank" rel="noopener noreferrer">GitHub</a>
             </p>
         </section>
 
     </main>
 
+    <!-- ==================== FOOTER ==================== -->
     <footer>
-        © 2025 Rony Santiago — Portafolio profesional de ingeniería.
+        © <script>document.write(new Date().getFullYear());</script> Rony Santiago — Portafolio profesional de ingeniería.
     </footer>
 
 </body>
