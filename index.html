@@ -516,32 +516,34 @@
   </div>
 </section>
 
-<!-- ============ VIDEOS Y MODELOS 3D ============ -->
+<!-- ============ VIDEOS Y MODELOS 3D (apilados en horizontal) ============ -->
 <section id="videos">
   <div class="container">
     <span class="eyebrow">Multimedia técnica</span>
     <h2>Videos y Modelos 3D Interactivos</h2>
-    <p class="section-sub">Explora mis diseños en 3D directamente en el navegador y accede a contenido educativo especializado.</p>
-    <div class="media-grid">
-      <article class="reveal">
-        <h3 style="margin-bottom:1rem;">📹 Ejercicio 3.120 – Mecánica Vectorial (Beer & Johnston)</h3>
-        <div class="video-wrapper">
-          <iframe width="100%" height="400" src="https://www.youtube.com/embed/rsyEhaxXmtU" title="Ejercicio 3.120 - Mecánica Vectorial para Ingenieros: Estática" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <p style="margin-top:0.8rem; color:var(--muted);">🔧 Resolución paso a paso del problema de poleas sobre un eje lineal, cálculo de fuerza resultante y momento equivalente en el punto A.</p>
-      </article>
-      <article class="reveal" id="modelos3d">
-        <h3 style="margin-bottom:1rem;">🧊 Modelo Arquitectónico Interactivo</h3>
-        <model-viewer 
-          src="assets/3d/arquitectura0.glb" 
-          alt="Modelo 3D de proyecto arquitectónico" 
-          auto-rotate 
-          camera-controls 
-          style="width:100%; height:450px; background-color:var(--panel-2); border-radius:var(--radius);">
-        </model-viewer>
-        <p style="margin-top:0.8rem; color:var(--muted);">🏗️ Diseño de interiores con recorrido virtual. Arrastra para rotar, rueda para zoom. Próximamente más modelos de ingeniería.</p>
-      </article>
-    </div>
+    <p class="section-sub" style="margin-bottom: 40px;">Explora mis diseños en 3D directamente en el navegador y accede a contenido educativo especializado.</p>
+
+    <!-- Video de YouTube (ancho completo) -->
+    <article class="reveal" style="margin-bottom: 56px;">
+      <h3 style="margin-bottom: 1.2rem;">📹 Ejercicio 3.120 – Mecánica Vectorial (Beer & Johnston)</h3>
+      <div class="video-wrapper">
+        <iframe width="100%" height="400" src="https://www.youtube.com/embed/rsyEhaxXmtU" title="Ejercicio 3.120 - Mecánica Vectorial para Ingenieros: Estática" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <p style="margin-top: 1rem; color: var(--muted);">🔧 Resolución paso a paso del problema de poleas sobre un eje lineal, cálculo de fuerza resultante y momento equivalente en el punto A.</p>
+    </article>
+
+    <!-- Modelo 3D arquitectónico (ancho completo) -->
+    <article class="reveal" id="modelos3d">
+      <h3 style="margin-bottom: 1.2rem;">🧊 Modelo Arquitectónico Interactivo</h3>
+      <model-viewer 
+        src="assets/3d/arquitectura0.glb" 
+        alt="Modelo 3D de proyecto arquitectónico" 
+        auto-rotate 
+        camera-controls 
+        style="width: 100%; height: 500px; background-color: var(--panel-2); border-radius: var(--radius); border: 1px solid var(--border);">
+      </model-viewer>
+      <p style="margin-top: 1rem; color: var(--muted);">🏗️ Diseño de interiores con recorrido virtual. Arrastra para rotar, rueda para zoom. Próximamente más modelos de ingeniería.</p>
+    </article>
   </div>
 </section>
 
